@@ -5,8 +5,10 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{makeidx}
+\usepackage{float}
 \usepackage{graphicx}
 \usepackage{amsthm}
+%\usepackage[hidelinks]{hyperref}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 %\newtheorem{Comando_Creado_Programador}{Aparecer en pantalla}
 \newtheorem{Def}{Definición}[section]
@@ -121,7 +123,7 @@ A=
 \end{matrix}
 \right |
 \end{displaymath}
-\item Ejemplo: Demuestre que si
+\item Ejemplo:	 Demuestre que si
 \begin{displaymath}
 \begin{vmatrix}
 a_{11} & a_{12} & \cdots & a_{1n}\\
@@ -131,7 +133,13 @@ a_{n1} & a_{n2} & \cdots & a_{nn}
 \end{vmatrix}\neq -1
 \end{displaymath}
 \end{enumerate}
+\newpage
 \section{Insertar Imágenes}
-\sangria La siguiente imagen fue tomada de internet:
-\includegraphics[scale=•]{•}
+\sangria La siguiente imagen fue tomada de internet:\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.4]{Imagen1}
+\caption{La imagen fue tomada de la pagina www.pagina.com}
+\end{center}
+\end{figure}
 \end{document}

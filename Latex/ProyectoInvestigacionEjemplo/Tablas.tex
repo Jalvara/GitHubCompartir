@@ -1,0 +1,27 @@
+%Tablas en LaTeX
+\chapter{Creando tablas en modo normal}
+\begin{table}[H]
+\begin{center}
+%\renewcommand{\arratstrech}{1}
+\begin{tabular}{l|c|r}
+Nombre & Cuenta & Observacion\\\hline\hline
+Jose Mauricio & 100101 & JMAR\\
+Jose Mauricio & 100101 & JMAR\\
+Jose Mauricio & 100101 & JMAR
+\end{tabular}
+\end{center}
+\caption{Esta tabla representa los registros de los estudiantes de la clase B.}
+\end{table}
+\begin{table}[H]
+\begin{tabular}{|l|l|p{5cm}|}
+\hline
+\rowcolor[HTML]{FFCCC9} 
+\textbf{A} & \textbf{B} & \textbf{C}\\ \hline
+\rowcolor[HTML]{CBCEFB} 
+\textit{1} & \textit{2} & \lipsum[1] \\ \cline{1-2}
+\rowcolor[HTML]{CBCEFB} 
+\textit{4} & \textit{5} & \textit{6} \\ \hline
+\rowcolor[HTML]{CBCEFB} 
+\textit{7} & \textit{8} & \textit{9} \\ \hline
+\end{tabular}
+\end{table}

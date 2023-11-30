@@ -1,0 +1,29 @@
+\documentclass[12pt,letterpaper]{book}
+\input{Preambulo.tex}
+%https://webdemo.myscript.com/views/math/index.html
+%https://www.tablesgenerator.com/
+%https://www.mathcha.io/
+\begin{document}
+\pagenumbering{alph}
+\date{noviembre}
+\maketitle
+\renewcommand{\contentsname}{\centering Glosario}
+\tableofcontents
+\renewcommand{\listfigurename}{\centering Lista de figuras}
+\listoffigures
+\renewcommand{\listtablename}{\centering Lista de tablas}
+\listoftables
+%\fancyhead[ubicacion]{Cadena que aparecera en documento}
+\pagestyle{fancy}
+\fancyhead[OL]{Universidad Nacional Autonoma de Honduras}%Arriba; Impar: O , Par: E, Centro: C, Derecha: R, Izquierda: L
+\fancyfoot[EC]{Cuida el medio ambiente}%Abajo
+\input{Contenidos.tex}
+\input{Tablas.tex}
+En este apartado voy a citar a uno de los autores en las bibliografias \cite{Autor}.
+%\bibliographystyle{siam}
+%\bibliography{Sample.bib}
+\begin{thebibliography}{a}
+\bibitem[A1]{Autor}
+Juan,1998,Como hacer un dibujo.
+\end{thebibliography}
+\end{document}

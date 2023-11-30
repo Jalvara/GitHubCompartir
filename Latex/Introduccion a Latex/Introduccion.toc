@@ -1,0 +1,10 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}Entrando en este mundo}{i}%
+\contentsline {section}{\numberline {1.1}Subíndice y Supraíndices}{i}%
+\contentsline {section}{\numberline {1.2}Aritmética}{1}%
+\contentsline {chapter}{\numberline {2}Hablando de otras cosas}{3}%
+\contentsline {section}{\numberline {2.1}Variable Compleja}{3}%
+\contentsline {section}{\numberline {2.2}Matrices}{3}%
+\contentsline {section}{\numberline {2.3}Insertar Imágenes}{4}%
+\contentsline {subsection}{\numberline {2.3.1}Insetar Imagenes ahora si}{4}%
+\contentsline {subsubsection}{Insertar imagenes ahora de verdad si}{4}%
