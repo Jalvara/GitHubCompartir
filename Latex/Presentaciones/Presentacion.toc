@@ -1,0 +1,5 @@
+\babel@toc {spanish}{}
+\beamer@sectionintoc {1}{Creando un documento en Beamer}{2}{0}{1}
+\beamer@sectionintoc {2}{Hablando de Números complejos}{4}{0}{2}
+\beamer@sectionintoc {3}{Generando un video usando Frames}{18}{0}{3}
+\beamer@sectionintoc {4}{Bibliografias}{119}{0}{4}
