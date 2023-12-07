@@ -60,3 +60,9 @@ plot(X,Y)
 Tabla1<-data.frame(ind=X,dep=Y)
 Sol<-lm(dep~ind,Tabla1) #dep=m*ind+b+error; dep~ind
 #Prueba de hipotesis
+Datos<-rnorm(1000000,-3,0.1);#Muestra de datos que provienen de una distribucion normal
+library(nortest)
+#install.packages("nortest")
+ad.test(Datos)
+t.test(Datos,alternative = "two.side",mu=-3,conf.level = 0.98)#t proviene del nombre de la distribucion t de student.
+#Para este ejemplo Si p<(1-0.98)=0.02 entonces se rechaza la hipotesis nula

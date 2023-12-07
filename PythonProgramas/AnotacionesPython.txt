@@ -1,0 +1,18 @@
+1. python.org/download/
+2. Como cambiar de interprete:
+	a. En el entorno de variables globales, mover a la cabeza la ruta del compilador.
+3. Configuración para python VSC
+	a. En extensiones instalar Python aditivos.
+	b. En la barra de abajo se puede ver el interprete que se esta usando. Dando click se puede escoger el interprete que se desee.
+4. python.exe -m pip install --upgrade pip : Este comando actualizamos pip.
+5. pip install jupyter: para instalar los notebooks de jupyter.
+	Para porder ejecutarlo, escribimos en la consola jupyter notebook
+6. Para verificar la version de python dentro de python usamos 
+	a. import sys
+	b. sys.version o sys.version_info
+7. Google Colab
+	a. Es un colaboratory: 
+		i. Te permite ejecutar python en tu navegador: No requiere ocnfiguracion, acceso a gpus sin coste, compartir contenido facilmente.
+	b. Cuaderno de colab: Entorno interctivo. Combinacion de codigo ejecutable y texto enriquecido, imagenes html y latex.
+	c. El almacenamiento se da en el drive. 
+	d. Los cuadernos de colab son cuadernos de jupyter almacenados en colab.
