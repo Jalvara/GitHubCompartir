@@ -1,0 +1,82 @@
+/*load("/Users/50487/Documents/Clases/Herramientas Computacionales PACIII2023/GitHubCompartir/Maxima/Script2.mac");*/
+/*Algebra lineal*/
+/*M1:matrix([1,2,3,4],[5,6,7,8],[9,10,11,12]);
+print(M1);
+L1:makelist(a[i],i,1,3);
+M2:matrix(L1,L1,L1,L1);
+M3:matrix([a,b+c^2+1],[f,j+y]);
+print(M2);
+print("La transpuesta de M2: ");
+print(transpose(M2));
+M4:M2+M2;
+print(M4);
+print("Producto de M2 con su transpuesta: ");
+print(M2.transpose(M2));
+vec1:[a,b,c];
+vec2:[x,y,z];
+print("Producto interior de vec1 con vec2: ");
+load("eigen");
+load("vect");
+print(innerproduct(vec1,vec2));
+print("producto cruz: ");
+print("Producto cruz de vec1 con vec2: ");
+print(express(vec1~vec2));
+norm(x):=sqrt(innerproduct(x,x));
+print("La norma de vec1: ");
+print(norm(vec1));*/
+/*Resolucion de ecuaciones en maxima, lineales y de orden 2*/
+/*Ec1:x^2+y^2=23;
+Ec2:2*x-y^2=1;
+Sol:solve([Ec1,Ec2],[x,y]);
+print("Soluciones de la ecuacion: ");
+print(rhs(Sol[1][2]),rhs(Sol[1][1]));*/
+/*Graficos en Maxima*/
+/*plot2d(x^2*cos(x)+sin(x)*log(x),[x,1,2]);*/
+/*plot2d([parametric,cos(t),sin(t),[t,0,2*%pi]]);*//*Circulo x=cos(t),y=sin(t)*/
+/*load("implicit_plot");*/
+/*implicit_plot(x^2+y^2=1,[x,-1,1],[y,-1,1]);*/
+/*plot2d([x^2,sin(x),x^3],[x,-%pi,%pi]);*/
+/*plot3d(log(x^2+y^2),[x,-2,2],[y,-2,2]);*/
+/*plot3d([r+s,r+sin(s),s],[r,-1,1],[s,-1,1]);*//*[x,y,z]=[r+s,r+sin(s),s]*/
+/*Ecuacion parametrica del toroide*/
+/*x:(4+2*cos(a))*cos(b);
+y:(4+2*cos(a))*sin(b);
+z:2*sin(a);
+plot3d([x,y,z],[a,0,2*%pi],[b,0,2*%pi]);*/
+/*------------------Paquete draw------------------*/
+kill(all);
+load("draw");
+grafico1:explicit(sin(t),t,0,2*%pi);
+grafico2:parametric(cos(t),sin(t),t,0,2*%pi);
+grafico3:explicit(x^2-y^2,x,-1,1,y,-1,1);
+/*draw2d(title="Funcion seno",grafico1,grid=true);*/
+/*draw2d(title="Circulo Unitario",grafico2,grid=true);*/
+/*draw3d(title="Superficie cuadrica",enhanced3d=[z+x*y,x,y,z],palette=gray,grafico3);*/
+grafico4:region(x^2-y^2<0 and x^2+y^2>1,x,-2,2,y,-2,2);
+/*draw2d(grafico4);*/
+/*draw(gr2d(grafico1),gr2d(grafico2),gr3d(grafico3),gr2d(grafico4),columns=2);*/
+kill(all);
+/*Ejercicio1*/
+/*declare([x,y,b,d],real);
+z:x+%i*y;
+Exp1:(cabs(z-d)*cabs(z+d))^2;
+Exp1:ratsubst(b^2*(1-x^2/(1+b^2)),y^2,Exp1);
+define(f(x),Exp1);
+sol:solve(diff(f(x),x)=0,x);
+sol:rhs(sol[2]);
+print(sol);
+print(factor(f(0)-f(sol)));
+print(factor(f(sqrt(1+b^2))-f(sol)));*/
+/*Ejercicio2*/
+/*load("vect");
+load("eigen");
+U:makelist(u[k],k,1,3);
+V:makelist(v[k],k,1,3);
+W:makelist(w[k],k,1,3);
+M:matrix(W,U,V);
+Exp1:(determinant(M))^2;
+UV:express(U~V);
+norm(x):=sqrt(innerproduct(x,x));
+Exp2:(innerproduct(UV,W))^2/(norm(UV))^2*((norm(U)*norm(V))^2-(innerproduct(U,V))^2);
+print("Diferencia entre las expresiones: ");
+print(factor(Exp1-Exp2));*/
