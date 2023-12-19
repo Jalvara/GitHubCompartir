@@ -1,0 +1,36 @@
+/*load("/Users/50487/Documents/Clases/Herramientas Computacionales PACIII2023/GitHubCompartir/Maxima/ScriptSolucionActividad.mac");*/
+/*Ejercicio 1*/
+print("---------------------------------EJERCICIO_1---------------------------------");
+kill(all);
+M:matrix([a,0,2],[0,b,-1],[1,c,a]);
+b:matrix([1],[1],[w]);
+/*Condicion para solucion unica*/
+print("La relacion que debe existir entre a,b y c");
+print("para que el sistema tenga solución única es que:");
+print(factor(determinant(M)));
+print("sea diferencte de cero.");
+solucion:factor(invert(M).b);
+print(solucion);
+kill(all);
+/*Ejercicio 2*/
+print("---------------------------------EJERCICIO_2---------------------------------");
+f(x,y,z):=x^(log(y+sin(x)))+sin(x^2+y^2*cos(x+z));
+print(ratsimp(diff(diff(f(x,y,z),x),z)+diff(f(x,y,z),y,2)));
+kill(all);
+/*Ejercicio 3*/
+print("---------------------------------EJERCICIO_3---------------------------------");
+load("draw");
+Grafico:region(x^2+y^2<5 and sin(x^2+y)<100 and x+2*y>3,x,-1,3,y,0,3);
+print("Observando el gráfico anterior se puede ver que (0,2) está en la región acotada.");
+draw2d(Grafico);
+kill(all);
+/*Ejercicio 4*/
+print("---------------------------------EJERCICIO_4---------------------------------");
+load("solve_rec");
+Sol:solve_rec(a[n+2]=2*a[n]-a[n+1]+1,a[n],a[1]=1,a[2]=1);
+print(Sol);
+/*Ejercicio 5*/
+print("---------------------------------EJERCICIO_5---------------------------------");
+kill(all);
+load("simplify_sum");
+print(factor(simplify_sum(sum((16*k^2-5*k-1)*(k+1),k,1,n))));
